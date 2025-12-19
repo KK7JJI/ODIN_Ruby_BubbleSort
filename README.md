@@ -17,10 +17,16 @@ Additions include
   Both "n" and "m" are supplied on the command line at execution time.
 - the "sort_array" method will print out information about the selected
   sort method, array size sorted, and execution time in milliseconds.
+- the "is_sorted?" method tests an array to see if its sorted in ascending
+  order.
+- the "rubysort" method sorts an array using the Array class sort method.
+- the "main" method executes when the script file is executed directely
+  from the command line.
 
 
 **examples:**
 Execution within the ruby interactive environment
+
 ```
 irb(main):001> load "./bubblesort.rb"
 => true
@@ -52,7 +58,7 @@ Execution Time: 0.00352 ms
 ================================================================================
 
 => nil
-
+```
 
 ```
 irb(main):001> load "./bubblesort.rb"
@@ -85,8 +91,8 @@ Execution Time: 0.10162 ms
 ================================================================================
 
 => nil
-
 ```
+
 Execution of the script from the command line:
 ```
 ruby bubblesort.rb 10 1000
@@ -113,6 +119,31 @@ Execution Time: 0.01587 ms
 ================================================================================
 Execution Time: 0.00202 ms
 ================================================================================
+```
+
+```
+ruby bubblesort.rb 10000 1000
+
+================================================================================
+ (sorting array of 10000 elements)
+  sort test: false
+
+     Method: BUBBLESORT
+ (sorting array of 10000 elements)
+  sort test: true
+================================================================================
+Execution Time: 5135.73321 ms
+================================================================================
 
 
+================================================================================
+ (sorting array of 10000 elements)
+  sort test: false
+
+     Method: RUBYSORT
+ (sorting array of 10000 elements)
+  sort test: true
+================================================================================
+Execution Time: 0.99761 ms
+================================================================================
 ```
