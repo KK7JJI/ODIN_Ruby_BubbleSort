@@ -17,7 +17,7 @@ Additions include
   Both "n" and "m" are supplied on the command line at execution time.
 - the "sort_array" method will print out information about the selected
   sort method, array size sorted, and execution time in milliseconds.
-- the "is_sorted?" method tests an array to see if its sorted in ascending
+- the "is_sorted?" method tests an array to see if it's sorted in ascending
   order.
 - the "rubysort" method sorts an array using the Array class sort method.
 - the "main" method executes when the script file is executed directely
